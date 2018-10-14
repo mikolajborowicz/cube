@@ -19,4 +19,10 @@ html {
     margin-right: auto;
 }
 
+.hidden{
+    display: none;
+
+}
+
 @import 'navbar';
+@import 'header'
