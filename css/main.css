@@ -24,6 +24,7 @@ section.navbar-fluid {
   position: fixed;
   -webkit-box-shadow: 0px 3px 7px 0px rgba(50, 50, 50, 0.35);
           box-shadow: 0px 3px 7px 0px rgba(50, 50, 50, 0.35);
+  top: 0;
 }
 
 section.navbar-fluid div.navbar {
@@ -36,6 +37,7 @@ section.navbar-fluid div.navbar {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  height: 6rem;
 }
 
 section.navbar-fluid div.navbar a img {
@@ -44,5 +46,46 @@ section.navbar-fluid div.navbar a img {
 
 section.navbar-fluid .hidden {
   display: none;
+}
+
+header.header-top-fluid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: calc(100vh - 6rem);
+  background-color: green;
+  margin-top: 6rem;
+  background-image: -webkit-gradient(linear, left top, right top, from(#3dccbc), color-stop(#2bc2c0), color-stop(#23b8c1), color-stop(#28adc0), to(#33a2bd));
+  background-image: linear-gradient(to right, #3dccbc, #2bc2c0, #23b8c1, #28adc0, #33a2bd);
+}
+
+header.header-top-fluid .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header.header-top-fluid .container div:nth-child(2) {
+  padding-left: 4rem;
+  color: #ffffff;
+  font-family: 'Raleway',sans-serif;
+}
+
+header.header-top-fluid .container h2 {
+  margin: 0 0 2rem 0;
+  font-size: 4rem;
+  font-weight: 200;
+}
+
+header.header-top-fluid .container p {
+  margin: 0;
+  font-size: 1.6rem;
+  font-weight: 400;
 }
 /*# sourceMappingURL=main.css.map */
