@@ -1,0 +1,31 @@
+div.button{
+
+    >a{
+        width: 36rem;
+        height: 10rem;
+        background-color:gray;
+        display: inline-block;
+        text-decoration: none;
+        color: black;
+        overflow: hidden;
+
+        >span{
+            line-height: 10rem;
+            font-size: 3rem;
+            display: block;
+            text-align: center;
+            transition: .3s linear;
+        }
+
+    }
+
+    >a:hover span{
+            transform: translateY(-10rem);
+        
+        }
+        // div.kuleczka{
+        //     width: 10rem;
+        //     height: 10rem;
+        //     background-color: #fff;
+        // }  
+}

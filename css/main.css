@@ -88,4 +88,89 @@ header.header-top-fluid .container p {
   font-size: 1.6rem;
   font-weight: 400;
 }
+
+div.info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+div.info > article {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 30%;
+  background-color: aliceblue;
+  -webkit-box-shadow: 9px 6px 5px -6px rgba(0, 0, 0, 0.38);
+          box-shadow: 9px 6px 5px -6px rgba(0, 0, 0, 0.38);
+  padding: 2rem;
+}
+
+div.button > a {
+  width: 36rem;
+  height: 10rem;
+  background-color: gray;
+  display: inline-block;
+  text-decoration: none;
+  color: black;
+  overflow: hidden;
+}
+
+div.button > a > span {
+  line-height: 10rem;
+  font-size: 3rem;
+  display: block;
+  text-align: center;
+  -webkit-transition: .3s linear;
+  transition: .3s linear;
+}
+
+div.button > a:hover span {
+  -webkit-transform: translateY(-10rem);
+          transform: translateY(-10rem);
+}
+
+section.container-fluid {
+  background-color: aliceblue;
+}
+
+div.halloffame {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+div.halloffame > div.above article {
+  width: 65%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+div.halloffame > div.above article > p {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+div.halloffame div.gallery {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+div.halloffame div.gallery > article {
+  display: inline-block;
+}
+
+div.halloffame div.gallery > article > div.kuleczka {
+  width: 10rem;
+  height: 10rem;
+  background-color: gray;
+}
 /*# sourceMappingURL=main.css.map */

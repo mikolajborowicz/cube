@@ -1,0 +1,41 @@
+section.container-fluid{
+    background-color: aliceblue;
+}
+
+div.halloffame{
+    display: flex;
+    flex-direction: column;
+
+    >div.above article{
+        width: 65%;
+        display: flex;
+        
+        >h1{
+         
+        }
+
+        >p{
+            justify-content: center;
+        }
+
+    }
+
+div.gallery{
+    display: flex;
+
+    >article{
+        display: inline-block;
+
+            >div.kuleczka{
+                width: 10rem;
+                height: 10rem;
+                background-color: gray;
+                
+            }
+            >div.quote{
+
+            }
+        }
+    }
+}
+    
