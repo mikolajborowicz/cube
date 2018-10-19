@@ -8,32 +8,49 @@ div.halloffame{
 
     >div.above article{
         width: 65%;
-        display: flex;
+        justify-content: center;
         
         >h1{
-         
+         justify-content: center;
+         display: block;
         }
 
         >p{
             justify-content: center;
+            display: block;
         }
 
     }
 
 div.gallery{
     display: flex;
-
+    flex-wrap: wrap;
+    justify-content: space-around;
     >article{
-        display: inline-block;
+        width: 40%;
+        flex-direction: row;
+        padding: 0;
+
+        
+        
 
             >div.kuleczka{
-                width: 10rem;
-                height: 10rem;
+                width: 8rem;
+                height: 8rem;
                 background-color: gray;
+                border-radius: 50%;
                 
             }
             >div.quote{
+                >p{
+                    font-style: italic;
+                }
 
+                >span{
+                    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+                    font-size: 1rem;
+                    font-style: oblique;
+                }
             }
         }
     }

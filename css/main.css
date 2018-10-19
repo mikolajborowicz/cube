@@ -147,30 +147,157 @@ div.halloffame {
 
 div.halloffame > div.above article {
   width: 65%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+div.halloffame > div.above article > h1 {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: block;
 }
 
 div.halloffame > div.above article > p {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  display: block;
 }
 
 div.halloffame div.gallery {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 div.halloffame div.gallery > article {
-  display: inline-block;
+  width: 40%;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding: 0;
 }
 
 div.halloffame div.gallery > article > div.kuleczka {
-  width: 10rem;
-  height: 10rem;
+  width: 8rem;
+  height: 8rem;
   background-color: gray;
+  border-radius: 50%;
+}
+
+div.halloffame div.gallery > article > div.quote > p {
+  font-style: italic;
+}
+
+div.halloffame div.gallery > article > div.quote > span {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 1rem;
+  font-style: oblique;
+}
+
+section.contact-fluid div.informations > div:nth-child(1) h3, section.contact-fluid div.informations > div:nth-child(1) p, section.contact-fluid div.informations > div:nth-child(2) > ul > li, section.contact-fluid div.footer div {
+  text-decoration: none;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 200;
+}
+
+section.contact-fluid {
+  background-color: gray;
+}
+
+section.contact-fluid div.button {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+section.contact-fluid div.button > h2 {
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 200;
+  font-size: 5rem;
+  margin: 0;
+  margin-bottom: 2rem;
+}
+
+section.contact-fluid div.button > button {
+  background-color: black;
+  border: none;
+  color: white;
+  font-size: 5rem;
+  text-decoration: none;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 200;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border: .2rem;
+  border-color: white;
+}
+
+section.contact-fluid div.informations {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+section.contact-fluid div.informations > div:nth-child(1) {
+  width: 24rem;
+  height: 16rem;
+}
+
+section.contact-fluid div.informations > div:nth-child(1) h3 {
+  font-size: 2rem;
+  margin: 1rem;
+}
+
+section.contact-fluid div.informations > div:nth-child(1) p {
+  font-size: 1rem;
+}
+
+section.contact-fluid div.informations > div:nth-child(2) > ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+section.contact-fluid div.informations > div:nth-child(2) > ul > li {
+  font-size: 2rem;
+  text-decoration: none;
+}
+
+section.contact-fluid div.footer {
+  padding: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: black;
+}
+
+section.contact-fluid div.footer div {
+  color: white;
+  font-size: 1rem;
+}
+
+section.contact-fluid div.footer div a {
+  -webkit-text-decoration-color: skyblue;
+          text-decoration-color: skyblue;
+  text-decoration: none;
 }
 /*# sourceMappingURL=main.css.map */
