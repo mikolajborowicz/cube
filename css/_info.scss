@@ -1,12 +1,70 @@
+section.info-fluid{
+    height: 80rem;
+}
+
+
+div.alpha{
+    background-color: aliceblue;
+    width: 100%;
+    h1{
+   text-align: center;
+   margin-bottom: 3rem;
+   margin-top: 0;
+   @extend %font-format;
+   font-size: 5rem;
+    }
+    p{text-align: center;
+    @extend %font-format;
+    font-size: 2rem;
+    }
+}
+
 div.info{
     display: flex;
     justify-content: space-around;
+    position: relative;
     
     > article{
         box-sizing: border-box;
         width: 30%;
         background-color: aliceblue;
-        box-shadow: 9px 6px 5px -6px rgba(0,0,0,0.38);
+        box-shadow: -5px 6px 61px 12px rgba(50,111,122,0.74);
         padding: 2rem;
+        border-radius: 2%;
+        transition: .3s;
+        >h3{
+            @extend %font-format;
+            font-size: 2rem;
+            span{
+                font-size: 2rem;
+                svg{
+               font-size: 2rem;
+                }
+            }
+        }
+        >p{
+            @extend %font-format;
+            font-size: 1.5rem;
+        }
+    }
+    >article:nth-child(1){
+        position: absolute;
+        top: 30rem;
+    }
+    >article:nth-child(2){
+        position: absolute;
+        top: 15rem;
+        left: 2rem;
+    }
+    >article:nth-child(3){
+        position: absolute;
+        top: 15rem;
+        right: 2rem;
+    }
+
+    >article:hover{
+      
+        transform: translateY(2rem);
+        background-color: rgb(173, 216, 230);
     }
 }

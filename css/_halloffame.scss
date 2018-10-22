@@ -1,58 +1,65 @@
-section.container-fluid{
+section.container-fluid {
     background-color: aliceblue;
 }
 
-div.halloffame{
-    display: flex;
-    flex-direction: column;
+div.halloffame {
 
-    >div.above article{
-        width: 65%;
-        justify-content: center;
-        
-        >h1{
-         justify-content: center;
-         display: block;
+
+    >div.abovearticle{
+
+        >h1 {
+         text-align: center;
+         @extend %font-format;
+         font-size: 4rem;
+         margin: 0;
+ 
         }
 
-        >p{
-            justify-content: center;
+        >p {
             display: block;
+           text-align: center;
+           @extend %font-format;
+           font-size: 2rem;
+
         }
 
     }
 
-div.gallery{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    >article{
-        width: 40%;
-        flex-direction: row;
-        padding: 0;
+    div.gallery {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
 
-        
-        
+        >article {
+            width: 40%;
+            flex-direction: row;
+            padding: 0;
+            margin: 3rem;
 
-            >div.kuleczka{
+
+
+
+            >div.kuleczka {
                 width: 8rem;
                 height: 8rem;
                 background-color: gray;
                 border-radius: 50%;
-                
+
             }
-            >div.quote{
-                >p{
+
+            >div.quote {
+                >p {
+                    @extend %font-format;
                     font-style: italic;
+                    font-size: 2rem;
                 }
 
-                >span{
-                    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-                    font-size: 1rem;
+                >span {
+                    @extend %font-format;
+                    font-size: 2rem;
                     font-style: oblique;
                 }
             }
         }
     }
 }
-    

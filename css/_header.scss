@@ -30,3 +30,15 @@ header.header-top-fluid {
         }
     }
 }
+footer.logos{
+    height: 14rem;
+    align-items: center;
+    background-color:whitesmoke;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    img{
+        margin: 4rem;
+    }
+    
+}

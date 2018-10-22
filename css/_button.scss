@@ -1,12 +1,12 @@
-div.button{
-
+div.press{
+    margin: 3rem;
     >a{
         width: 36rem;
         height: 10rem;
-        background-color:gray;
+        background-color:white;
         display: inline-block;
         text-decoration: none;
-        color: black;
+        color: rgb(0, 189, 171);
         overflow: hidden;
 
         >span{
@@ -23,9 +23,5 @@ div.button{
             transform: translateY(-10rem);
         
         }
-        // div.kuleczka{
-        //     width: 10rem;
-        //     height: 10rem;
-        //     background-color: #fff;
-        // }  
+   
 }

@@ -1,5 +1,9 @@
 html {
   font-size: 10px;
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 html body {
@@ -25,6 +29,7 @@ section.navbar-fluid {
   -webkit-box-shadow: 0px 3px 7px 0px rgba(50, 50, 50, 0.35);
           box-shadow: 0px 3px 7px 0px rgba(50, 50, 50, 0.35);
   top: 0;
+  z-index: 999;
 }
 
 section.navbar-fluid div.navbar {
@@ -89,12 +94,56 @@ header.header-top-fluid .container p {
   font-weight: 400;
 }
 
+footer.logos {
+  height: 14rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: whitesmoke;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+footer.logos img {
+  margin: 4rem;
+}
+
+section.info-fluid {
+  height: 80rem;
+}
+
+div.alpha {
+  background-color: aliceblue;
+  width: 100%;
+}
+
+div.alpha h1 {
+  text-align: center;
+  margin-bottom: 3rem;
+  margin-top: 0;
+  font-size: 5rem;
+}
+
+div.alpha p {
+  text-align: center;
+  font-size: 2rem;
+}
+
 div.info {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  position: relative;
 }
 
 div.info > article {
@@ -102,22 +151,68 @@ div.info > article {
           box-sizing: border-box;
   width: 30%;
   background-color: aliceblue;
-  -webkit-box-shadow: 9px 6px 5px -6px rgba(0, 0, 0, 0.38);
-          box-shadow: 9px 6px 5px -6px rgba(0, 0, 0, 0.38);
+  -webkit-box-shadow: -5px 6px 61px 12px rgba(50, 111, 122, 0.74);
+          box-shadow: -5px 6px 61px 12px rgba(50, 111, 122, 0.74);
   padding: 2rem;
+  border-radius: 2%;
+  -webkit-transition: .3s;
+  transition: .3s;
 }
 
-div.button > a {
+div.info > article > h3 {
+  font-size: 2rem;
+}
+
+div.info > article > h3 span {
+  font-size: 2rem;
+}
+
+div.info > article > h3 span svg {
+  font-size: 2rem;
+}
+
+div.info > article > p {
+  font-size: 1.5rem;
+}
+
+div.info > article:nth-child(1) {
+  position: absolute;
+  top: 30rem;
+}
+
+div.info > article:nth-child(2) {
+  position: absolute;
+  top: 15rem;
+  left: 2rem;
+}
+
+div.info > article:nth-child(3) {
+  position: absolute;
+  top: 15rem;
+  right: 2rem;
+}
+
+div.info > article:hover {
+  -webkit-transform: translateY(2rem);
+          transform: translateY(2rem);
+  background-color: lightblue;
+}
+
+div.press {
+  margin: 3rem;
+}
+
+div.press > a {
   width: 36rem;
   height: 10rem;
-  background-color: gray;
+  background-color: white;
   display: inline-block;
   text-decoration: none;
-  color: black;
+  color: #00bdab;
   overflow: hidden;
 }
 
-div.button > a > span {
+div.press > a > span {
   line-height: 10rem;
   font-size: 3rem;
   display: block;
@@ -126,7 +221,7 @@ div.button > a > span {
   transition: .3s linear;
 }
 
-div.button > a:hover span {
+div.press > a:hover span {
   -webkit-transform: translateY(-10rem);
           transform: translateY(-10rem);
 }
@@ -135,35 +230,16 @@ section.container-fluid {
   background-color: aliceblue;
 }
 
-div.halloffame {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+div.halloffame > div.abovearticle > h1 {
+  text-align: center;
+  font-size: 4rem;
+  margin: 0;
 }
 
-div.halloffame > div.above article {
-  width: 65%;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-div.halloffame > div.above article > h1 {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+div.halloffame > div.abovearticle > p {
   display: block;
-}
-
-div.halloffame > div.above article > p {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  display: block;
+  text-align: center;
+  font-size: 2rem;
 }
 
 div.halloffame div.gallery {
@@ -183,6 +259,7 @@ div.halloffame div.gallery > article {
       -ms-flex-direction: row;
           flex-direction: row;
   padding: 0;
+  margin: 3rem;
 }
 
 div.halloffame div.gallery > article > div.kuleczka {
@@ -194,31 +271,34 @@ div.halloffame div.gallery > article > div.kuleczka {
 
 div.halloffame div.gallery > article > div.quote > p {
   font-style: italic;
+  font-size: 2rem;
 }
 
 div.halloffame div.gallery > article > div.quote > span {
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  font-size: 1rem;
+  font-size: 2rem;
   font-style: oblique;
 }
 
-section.contact-fluid div.informations > div:nth-child(1) h3, section.contact-fluid div.informations > div:nth-child(1) p, section.contact-fluid div.informations > div:nth-child(2) > ul > li, section.contact-fluid div.footer div {
+div.alpha h1, div.alpha p, div.info > article > h3, div.info > article > p, div.halloffame > div.abovearticle > h1, div.halloffame > div.abovearticle > p, div.halloffame div.gallery > article > div.quote > p, div.halloffame div.gallery > article > div.quote > span, section.contact-fluid div.button > div.borderbutton > h2, section.contact-fluid div.informations > div:nth-child(1) h3, section.contact-fluid div.informations > div:nth-child(1) p, section.contact-fluid div.informations > div:nth-child(2) > ul.list > li, section.contact-fluid div.informations div.mail a, section.contact-fluid div.footer div, section.products-fluid div.containerproducts > div.catalog > h1, section.products-fluid div.containerproducts > div.catalog p {
   text-decoration: none;
   font-family: 'Raleway', sans-serif;
   font-weight: 200;
 }
 
 section.contact-fluid {
-  background-color: gray;
+  background-color: black;
+  height: 60rem;
 }
 
 section.contact-fluid div.button {
+  margin-top: 3rem;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
 }
 
 section.contact-fluid div.button > h2 {
+  margin-top: 2rem;
   text-align: center;
   text-decoration: none;
   color: white;
@@ -229,22 +309,23 @@ section.contact-fluid div.button > h2 {
   margin-bottom: 2rem;
 }
 
-section.contact-fluid div.button > button {
-  background-color: black;
-  border: none;
-  color: white;
-  font-size: 5rem;
-  text-decoration: none;
-  font-family: 'Raleway', sans-serif;
-  font-weight: 200;
-  display: block;
+section.contact-fluid div.button > div.borderbutton {
+  margin-top: 2rem;
+  width: 30%;
+  border: .2rem;
   margin-left: auto;
   margin-right: auto;
+}
+
+section.contact-fluid div.button > div.borderbutton > h2 {
+  color: white;
+  font-size: 5rem;
   border: .2rem;
   border-color: white;
 }
 
 section.contact-fluid div.informations {
+  margin-top: 3rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -252,31 +333,50 @@ section.contact-fluid div.informations {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
 }
 
 section.contact-fluid div.informations > div:nth-child(1) {
   width: 24rem;
   height: 16rem;
+  margin: 4rem;
 }
 
 section.contact-fluid div.informations > div:nth-child(1) h3 {
   font-size: 2rem;
   margin: 1rem;
+  color: white;
 }
 
 section.contact-fluid div.informations > div:nth-child(1) p {
   font-size: 1rem;
+  color: white;
 }
 
-section.contact-fluid div.informations > div:nth-child(2) > ul {
+section.contact-fluid div.informations > div:nth-child(2) {
+  margin: 1rem;
+}
+
+section.contact-fluid div.informations > div:nth-child(2) > ul.list {
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
 
-section.contact-fluid div.informations > div:nth-child(2) > ul > li {
+section.contact-fluid div.informations > div:nth-child(2) > ul.list > li {
   font-size: 2rem;
+}
+
+section.contact-fluid div.informations > div:nth-child(2) > ul.list > li a {
   text-decoration: none;
+  color: skyblue;
+}
+
+section.contact-fluid div.informations div.mail a {
+  font-size: 2rem;
+  color: skyblue;
 }
 
 section.contact-fluid div.footer {
@@ -296,8 +396,114 @@ section.contact-fluid div.footer div {
 }
 
 section.contact-fluid div.footer div a {
-  -webkit-text-decoration-color: skyblue;
-          text-decoration-color: skyblue;
+  color: skyblue;
   text-decoration: none;
+}
+
+section.products-fluid div.containerproducts {
+  padding: 0;
+  width: 108rem;
+  height: 80rem;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+section.products-fluid div.containerproducts > div.catalog {
+  text-align: center;
+  width: 108rem;
+  height: 20rem;
+}
+
+section.products-fluid div.containerproducts > div.catalog > h1 {
+  margin-top: 0;
+  font-size: 4rem;
+}
+
+section.products-fluid div.containerproducts > div.catalog p {
+  font-size: 2rem;
+}
+
+section.products-fluid div.containerproducts > div.bricks {
+  padding: 0;
+  width: 108rem;
+  height: 60rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+section.products-fluid div.containerproducts > div.bricks > div:nth-child(1) {
+  width: 34rem;
+  height: 60rem;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+section.products-fluid div.containerproducts > div.bricks > div:nth-child(1) > div:first-of-type {
+  width: 34rem;
+  height: 28rem;
+  margin: 0;
+  background-color: honeydew;
+  padding-bottom: 0;
+}
+
+section.products-fluid div.containerproducts > div.bricks > div:nth-child(1) > div:last-of-type {
+  width: 34rem;
+  height: 28rem;
+  margin: 0;
+  background-color: rebeccapurple;
+}
+
+section.products-fluid div.containerproducts > div.bricks > div:nth-child(2) {
+  background-color: aquamarine;
+  width: 34rem;
+  height: 60rem;
+}
+
+section.products-fluid div.containerproducts > div.bricks > div:nth-child(3) {
+  width: 34rem;
+  height: 60rem;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+section.products-fluid div.containerproducts > div.bricks > div:nth-child(3) > div:first-of-type {
+  width: 34rem;
+  height: 28rem;
+  margin: 0;
+  background-color: darksalmon;
+  padding-bottom: 0;
+}
+
+section.products-fluid div.containerproducts > div.bricks > div:nth-child(3) > div:last-of-type {
+  width: 34rem;
+  height: 28rem;
+  margin: 0;
+  background-color: powderblue;
 }
 /*# sourceMappingURL=main.css.map */
