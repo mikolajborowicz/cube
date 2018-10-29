@@ -1,70 +1,108 @@
-section.info-fluid{
+section.info-fluid {
     height: 80rem;
-}
+    padding-top: 3rem;
 
 
-div.alpha{
-    background-color: aliceblue;
-    width: 100%;
-    h1{
-   text-align: center;
-   margin-bottom: 3rem;
-   margin-top: 0;
-   @extend %font-format;
-   font-size: 5rem;
-    }
-    p{text-align: center;
-    @extend %font-format;
-    font-size: 2rem;
-    }
-}
 
-div.info{
-    display: flex;
-    justify-content: space-around;
-    position: relative;
-    
-    > article{
-        box-sizing: border-box;
-        width: 30%;
+    div.alpha {
+
         background-color: aliceblue;
-        box-shadow: -5px 6px 61px 12px rgba(50,111,122,0.74);
-        padding: 2rem;
-        border-radius: 2%;
-        transition: .3s;
-        >h3{
+        width: 100%;
+
+        h1 {
+            text-align: center;
+            margin-bottom: 3rem;
+            margin-top: 0;
+            @extend %font-format;
+            font-size: 5rem;
+        }
+
+        p {
+            text-align: center;
             @extend %font-format;
             font-size: 2rem;
-            span{
-                font-size: 2rem;
-                svg{
-               font-size: 2rem;
-                }
-            }
+        
         }
-        >p{
-            @extend %font-format;
-            font-size: 1.5rem;
-        }
-    }
-    >article:nth-child(1){
-        position: absolute;
-        top: 30rem;
-    }
-    >article:nth-child(2){
-        position: absolute;
-        top: 15rem;
-        left: 2rem;
-    }
-    >article:nth-child(3){
-        position: absolute;
-        top: 15rem;
-        right: 2rem;
     }
 
-    >article:hover{
-      
-        transform: translateY(2rem);
-        background-color: rgb(173, 216, 230);
+    div.click{
+     margin-top: 3rem;
+     margin-bottom: 0;
+
+        a{
+            display: block;
+            height: 5rem;
+            font-size: 4rem;
+            text-decoration: none;
+            color: black;
+            background-color: skyblue;
+            width: 15%;
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+            @extend %font-format;
+            transition: .3s;
+            border-radius: 1.2rem;
+            border: 2px;
+            border: black;
+            
+        }
+        a:hover{
+            background-color:orange;
+        }
+    }
+
+    div.info {
+        display: flex;
+        justify-content: space-around;
+        position: relative;
+
+        >article {
+            box-sizing: border-box;
+            width: 30%;
+            background-color: aliceblue;
+            box-shadow: -5px 6px 61px 12px rgba(50, 111, 122, 0.74);
+            padding: 2rem;
+            border-radius: 2%;
+            transition: .3s;
+
+            >h3 {
+                @extend %font-format;
+                font-size: 2rem;
+
+                span {
+                    color: darkturquoise;
+                    font-size: 2rem;
+                }
+            }
+
+            >p {
+                @extend %font-format;
+                font-size: 1.5rem;
+            }
+        }
+
+        >article:nth-child(1) {
+            position: absolute;
+            top: 30rem;
+        }
+
+        >article:nth-child(2) {
+            position: absolute;
+            top: 15rem;
+            left: 2rem;
+        }
+
+        >article:nth-child(3) {
+            position: absolute;
+            top: 15rem;
+            right: 2rem;
+        }
+
+        >article:hover {
+
+            transform: translateY(2rem);
+            background-color: rgb(173, 216, 230);
+        }
     }
 }

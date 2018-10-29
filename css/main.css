@@ -118,26 +118,54 @@ footer.logos img {
 
 section.info-fluid {
   height: 80rem;
+  padding-top: 3rem;
 }
 
-div.alpha {
+section.info-fluid div.alpha {
   background-color: aliceblue;
   width: 100%;
 }
 
-div.alpha h1 {
+section.info-fluid div.alpha h1 {
   text-align: center;
   margin-bottom: 3rem;
   margin-top: 0;
   font-size: 5rem;
 }
 
-div.alpha p {
+section.info-fluid div.alpha p {
   text-align: center;
   font-size: 2rem;
 }
 
-div.info {
+section.info-fluid div.click {
+  margin-top: 3rem;
+  margin-bottom: 0;
+}
+
+section.info-fluid div.click a {
+  display: block;
+  height: 5rem;
+  font-size: 4rem;
+  text-decoration: none;
+  color: black;
+  background-color: skyblue;
+  width: 15%;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  -webkit-transition: .3s;
+  transition: .3s;
+  border-radius: 1.2rem;
+  border: 2px;
+  border: black;
+}
+
+section.info-fluid div.click a:hover {
+  background-color: orange;
+}
+
+section.info-fluid div.info {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -146,7 +174,7 @@ div.info {
   position: relative;
 }
 
-div.info > article {
+section.info-fluid div.info > article {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   width: 30%;
@@ -159,40 +187,37 @@ div.info > article {
   transition: .3s;
 }
 
-div.info > article > h3 {
+section.info-fluid div.info > article > h3 {
   font-size: 2rem;
 }
 
-div.info > article > h3 span {
+section.info-fluid div.info > article > h3 span {
+  color: darkturquoise;
   font-size: 2rem;
 }
 
-div.info > article > h3 span svg {
-  font-size: 2rem;
-}
-
-div.info > article > p {
+section.info-fluid div.info > article > p {
   font-size: 1.5rem;
 }
 
-div.info > article:nth-child(1) {
+section.info-fluid div.info > article:nth-child(1) {
   position: absolute;
   top: 30rem;
 }
 
-div.info > article:nth-child(2) {
+section.info-fluid div.info > article:nth-child(2) {
   position: absolute;
   top: 15rem;
   left: 2rem;
 }
 
-div.info > article:nth-child(3) {
+section.info-fluid div.info > article:nth-child(3) {
   position: absolute;
   top: 15rem;
   right: 2rem;
 }
 
-div.info > article:hover {
+section.info-fluid div.info > article:hover {
   -webkit-transform: translateY(2rem);
           transform: translateY(2rem);
   background-color: lightblue;
@@ -228,6 +253,10 @@ div.press > a:hover span {
 
 section.container-fluid {
   background-color: aliceblue;
+}
+
+div.halloffame > div.abovearticle {
+  padding-top: 3rem;
 }
 
 div.halloffame > div.abovearticle > h1 {
@@ -279,7 +308,7 @@ div.halloffame div.gallery > article > div.quote > span {
   font-style: oblique;
 }
 
-div.alpha h1, div.alpha p, div.info > article > h3, div.info > article > p, div.halloffame > div.abovearticle > h1, div.halloffame > div.abovearticle > p, div.halloffame div.gallery > article > div.quote > p, div.halloffame div.gallery > article > div.quote > span, section.contact-fluid div.button > div.borderbutton > h2, section.contact-fluid div.informations > div:nth-child(1) h3, section.contact-fluid div.informations > div:nth-child(1) p, section.contact-fluid div.informations > div:nth-child(2) > ul.list > li, section.contact-fluid div.informations div.mail a, section.contact-fluid div.footer div, section.products-fluid div.containerproducts > div.catalog > h1, section.products-fluid div.containerproducts > div.catalog p {
+section.info-fluid div.alpha h1, section.info-fluid div.alpha p, section.info-fluid div.click a, section.info-fluid div.info > article > h3, section.info-fluid div.info > article > p, div.halloffame > div.abovearticle > h1, div.halloffame > div.abovearticle > p, div.halloffame div.gallery > article > div.quote > p, div.halloffame div.gallery > article > div.quote > span, section.contact-fluid div.titles > div h3, section.contact-fluid div.informations > div:nth-child(1) h3, section.contact-fluid div.informations > div:nth-child(1) p, section.contact-fluid div.informations > div:nth-child(2) > ul.list > li, section.contact-fluid div.informations div.mail a, section.contact-fluid div.footer div, section.products-fluid div.containerproducts > div.catalog > h1, section.products-fluid div.containerproducts > div.catalog p {
   text-decoration: none;
   font-family: 'Raleway', sans-serif;
   font-weight: 200;
@@ -290,38 +319,23 @@ section.contact-fluid {
   height: 60rem;
 }
 
-section.contact-fluid div.button {
-  margin-top: 3rem;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+section.contact-fluid div.titles {
+  background-color: black;
+  height: 20rem;
 }
 
-section.contact-fluid div.button > h2 {
-  margin-top: 2rem;
-  text-align: center;
-  text-decoration: none;
-  color: white;
-  font-family: 'Raleway', sans-serif;
-  font-weight: 200;
-  font-size: 5rem;
-  margin: 0;
-  margin-bottom: 2rem;
-}
-
-section.contact-fluid div.button > div.borderbutton {
-  margin-top: 2rem;
-  width: 30%;
-  border: .2rem;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-section.contact-fluid div.button > div.borderbutton > h2 {
-  color: white;
-  font-size: 5rem;
-  border: .2rem;
+section.contact-fluid div.titles > div {
+  padding-top: 4rem;
+  margin-top: 0;
+  border: 2px;
   border-color: white;
+}
+
+section.contact-fluid div.titles > div h3 {
+  margin-top: 0;
+  text-align: center;
+  font-size: 4rem;
+  color: white;
 }
 
 section.contact-fluid div.informations {
@@ -336,6 +350,7 @@ section.contact-fluid div.informations {
   -webkit-box-align: baseline;
       -ms-flex-align: baseline;
           align-items: baseline;
+  margin-bottom: 6rem;
 }
 
 section.contact-fluid div.informations > div:nth-child(1) {
@@ -403,7 +418,7 @@ section.contact-fluid div.footer div a {
 section.products-fluid div.containerproducts {
   padding: 0;
   width: 108rem;
-  height: 80rem;
+  height: 85rem;
   margin-right: auto;
   margin-left: auto;
 }
